@@ -458,35 +458,35 @@ if extinction_prey and extinction_parasite and extinction_predator:
     extinction = "1"
 
 if av_uninfected_prey < av_infected_prey and av_uninfected_predator < av_infected_predator and coexistence == "1":
-    grey = "1"
+    cyan = "1"
     yellow = "0"
     black = "0"
-    red = "0"
+    magenta = "0"
     white = "0"
 
 if av_uninfected_prey >= av_infected_prey and av_uninfected_predator < av_infected_predator and coexistence == "1":
-    grey = "0"
+    cyan = "0"
     yellow = "1"
     black = "0"
-    red = "0"
+    magenta = "0"
     white = "0"
 
 if av_uninfected_prey < av_infected_prey and av_uninfected_predator >= av_infected_predator and coexistence == "1":
-    grey = "0"
+    cyan = "0"
     yellow = "0"
     black = "1"
-    red = "0"
+    magenta = "0"
     white = "0"
 
 if av_uninfected_prey >= av_infected_prey and av_uninfected_predator >= av_infected_predator and coexistence == "1":
-    grey = "0"
+    cyan = "0"
     yellow = "0"
     black = "0"
-    red = "1"
+    magenta = "1"
     white = "0"
 
 # Save output
-List = [str(Qx),str(Qy),str(rp),str(coexistence_prey),str(coexistence_predator_and_prey),str(coexistence),str(extinction),str(grey),str(yellow),str(black),str(red),str(white)]
+List = [str(Qx),str(Qy),str(rp),str(coexistence_prey),str(coexistence_predator_and_prey),str(coexistence),str(extinction),str(cyan),str(yellow),str(black),str(magenta),str(white)]
 
 # Open our existing CSV file in append mode
 # Create a file object for this file
